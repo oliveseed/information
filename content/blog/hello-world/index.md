@@ -1,10 +1,10 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "The first post"
 ---
 
-This is my first post on my new fake blog! How exciting!
+If I forget how to do something while coding, I often dig out some old code to see how I did it before. I figured a similar situation might happen here since I probably won't remember all of the formatting syntax for writing blog posts. Luckily, this blog template includes this convenient placeholder post with a bunch of formatting examples, so I'm going to keep it. Below is the unedited remainder of what this template came with:
 
 I'm sure I'll write a lot more interesting things in the future.
 
