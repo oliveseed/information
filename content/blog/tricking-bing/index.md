@@ -1,6 +1,7 @@
 ---
-title: Interesting situation with Bing AI
+title: Tricking Bing
 date: "2023-12-31"
+description: "An interesting situation with Bing AI"
 ---
 
 A while ago I asked Bing Chat to generate an SVG path for a clock. Here’s how it went:
