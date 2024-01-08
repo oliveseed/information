@@ -29,6 +29,6 @@ Current assistants you can talk to (Alexa, Google Assistant, ChatGPT, etc.) are 
 #### Some other things that have lots of room for improvement and will continue to gain popularity:
 
 - Generative AI for videos
-- LLM-powered companions (girlfriends)
+- LLM-powered companions/girlfriends
 - LLM-powered language tutors
 - LLMs in video games
