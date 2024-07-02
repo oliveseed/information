@@ -114,7 +114,7 @@ I took roughly the first 110,000 servers and made a map from it using Nomic Atla
 
 ![map](./map.png)
 
-Each point on the map represents a Discord server, and their placements are based on the text embeddings of the server names. The name of a Discord server often isn’t a good indication of what the server is about, but it kind of works anyway. I detail the map in this video.
+Each point on the map represents a Discord server, and their placements are based on the text embeddings of the server names. The name of a Discord server often isn’t a good indication of what the server is about, but it kind of works anyway. I detail the map in [this video](https://www.youtube.com/shorts/oA7GZi__gbY).
 
 I also wanted to observe the progression of Discord server sizes over time, so I retrieved additional invites from the Wayback Machine using a similar method. This brought the total to around 1,180,000 Discord servers, including duplicates. 
 
