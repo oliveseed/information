@@ -70,7 +70,7 @@ To actually view the pages, the query can be modified like below:
 
 The result might be quite long, but here’s a small sample of what it would look like:
 
-![results](./wrggr.PNG)
+![results](./index_results.png)
 
 In each entry, the “filename” indicates which common crawl segment the data for the url can be found in. Additionally, “length” and “offset” indicate the exact byte position in the segment that contains the wanted data. “Digest” is a string that uniquely identifies the data of the crawled url.
 
@@ -100,7 +100,7 @@ The compressed data can be unzipped, and useful parts extracted from the HTML, s
 
 With the wanted information extracted and stored in Python lists, it can then be organized into a single pandas table.
 
-![pandas table](./wafwa.PNG)
+![pandas table](./table.png)
 
 This process was repeated for every crawl newer than 2020, resulting in around 700,000 invites.
 
@@ -112,7 +112,7 @@ With search queries limited to textual lists of results, I also wanted to visual
 
 I took roughly the first 110,000 servers and made a map from it using Nomic Atlas.
 
-![map](./Capture.PNG)
+![map](./map.png)
 
 Each point on the map represents a Discord server, and their placements are based on the text embeddings of the server names. The name of a Discord server often isn’t a good indication of what the server is about, but it kind of works anyway. I detail the map in this video.
 
