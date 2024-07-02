@@ -102,7 +102,7 @@ With the wanted information extracted and stored in Python lists, it can then be
 
 ![pandas table](./table.png)
 
-This process was repeated for every crawl newer than 2020, resulting in around 700,000 invites.
+This process was repeated for every crawl newer than 2020, resulting in around 900,000 invites.
 
 ## Exploring the data
 
