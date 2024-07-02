@@ -1,6 +1,6 @@
 ---
 title: A broader view of Discord
-date: "2023-12-23"
+date: "2024-07-01"
 description: "Collecting and visualizing a million Discord servers"
 ---
 
