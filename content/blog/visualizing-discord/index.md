@@ -70,7 +70,7 @@ To actually view the pages, the query can be modified like below:
 
 The result might be quite long, but here’s a small sample of what it would look like:
 
-![results](./cc_index_results.jpg)
+![results](./wrggr.PNG)
 
 In each entry, the “filename” indicates which common crawl segment the data for the url can be found in. Additionally, “length” and “offset” indicate the exact byte position in the segment that contains the wanted data. “Digest” is a string that uniquely identifies the data of the crawled url.
 
@@ -100,7 +100,7 @@ The compressed data can be unzipped, and useful parts extracted from the HTML, s
 
 With the wanted information extracted and stored in Python lists, it can then be organized into a single pandas table.
 
-![pandas table](./pandas_table.jpg)
+![pandas table](./wafwa.PNG)
 
 This process was repeated for every crawl newer than 2020, resulting in around 700,000 invites.
 
@@ -112,7 +112,7 @@ With search queries limited to textual lists of results, I also wanted to visual
 
 I took roughly the first 110,000 servers and made a map from it using Nomic Atlas.
 
-![map](./map.jpg)
+![map](./Capture.PNG)
 
 Each point on the map represents a Discord server, and their placements are based on the text embeddings of the server names. The name of a Discord server often isn’t a good indication of what the server is about, but it kind of works anyway. I detail the map in this video.
 
@@ -122,7 +122,7 @@ Duplicates, occurring at different timestamps, allowed tracking member counts ov
 
 After processing, the result was a spreadsheet of member counts over time for all Discord servers that at some point reached the top 10 from 2019 to 2024. This data was animated into a bar chart race using Flourish.studio. The final video is below:
 
-(https://www.youtube.com/watch?v=BNbN8532GPM)
+https://www.youtube.com/watch?v=BNbN8532GPM
 
 Key observations from the video:
 - Discord used to cap the number of members a server could have, and raised the cap multiple times as top servers grew.
