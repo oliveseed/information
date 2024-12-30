@@ -1,14 +1,12 @@
 ---
-title: (AI) Predictions 2024
+title: AI Predictions 2024
 date: "2024-01-08"
 description: AI-related events I think will happen in 2024
 ---
 
 As 2023 came to an end, I decided to read some 2023 predictions online that were made at the end of 2022. A few were right, many were close, and the rest were either wrong or too broad to be useful.
 
-Good predictions are hard to make. When it comes to tech, it’s easy to overestimate something now but underestimate it later. So, an accurate prediction for 2024 might be that tech predictions will be wrong. That’s not very interesting though, so I tried to make a list of predictions for 2024 that I think will be interesting to look back at in a year. The goal is to make predictions that are either going to be right or wrong and not somewhere in between.
-
-They are mostly related to AI: 
+Good predictions are hard to make. When it comes to tech, it’s easy to overestimate something now but underestimate it later. So, an accurate prediction for 2024 might be that tech predictions will be wrong. That’s not very interesting though, so I tried to make a list of predictions for 2024 that I think will be interesting to look back at in a year.
 
 #### There will be an open-weight multimodal Mixture-of-Experts LLM
 
@@ -25,10 +23,3 @@ Siri will be upgraded with a Transformer model and will be multimodal. Apple wil
 #### End-to-end virtual assistants
 
 Current assistants you can talk to (Alexa, Google Assistant, ChatGPT, etc.) are pipelines that involve using speech-to-text and text-to-speech with something in between. It has been this way for a while, but the final state that virtual assistants would evolve into is a single end-to-end Transformer-like model that works fully in the audio domain. I don’t think this will happen in 2024, but I’ll include it here anyway.
-
-#### Some other things that have lots of room for improvement and will continue to gain popularity:
-
-- Generative AI for videos
-- LLM-powered companions/girlfriends
-- LLM-powered language tutors
-- LLMs in video games
