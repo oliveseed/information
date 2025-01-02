@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Oliver L`,
+    title: `information`,
     author: {
-      name: `Oliver Lin`,
-      summary: `who lives and works in Vancouver building useful things.`,
+      name: `oliverin1`,
+      summary: `who lives and builds things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `nothing`,
     },
   },
   plugins: [
