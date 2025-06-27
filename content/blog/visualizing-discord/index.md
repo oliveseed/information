@@ -1,18 +1,26 @@
 ---
-title: A broader view of Discord
+title: Mapping 1,000,000 Discord servers
 date: "2024-07-01"
-description: "Collecting and visualizing a million Discord servers"
+description: "Findings from getting invited to over a million Discord servers"
 ---
 
-Discord is a platform that lets people create and join “Discord servers”, which are isolated invite-only communities containing collections of chatrooms. Naturally, this makes it not straightforward to access and analyze Discord-related statistics, as you can only see servers you’ve been invited to.
+Discord is a social platform that lets people create and join “Discord servers”, which are isolated invite-only communities containing collections of chatrooms. Naturally, this makes it non trivial to analyze global, platform-wide statistics, as you only see and access the small subset of communities you've been invited to (usually 5-50 Discord servers, while there are millions in total).
 
-It would be interesting to zoom out and get a broader view of the platform. With a lack of existing detailed exploration on Discord, I decided to make a collection of around 1,000,000 Discord servers in order to find the largest ones, understand the distribution of servers, and categorize and visualize some Discord communities. 
+But what if you could zoom all the way out and get a look at the whole platform in one picture? Since I could not find any existing documented work on mapping Discord, I collected a dataset of around 1,000,000 Discord servers to try to answer a few questions: 
+- What are the largest Discord servers
+- How are the server sizes distributed
+- How has Discord evolved over time
+- What would it look like to categorize and visualize these communities
 
-Discord servers are typically found from their invitation links, which are often shared on the web. So, a good way to start would be by finding a lot of invitation links.
+Interestingly, this led to the discovery of some new perspectives, including revealing a rising trend on the platform.
+
+## Collecting invitations
+
+In order to gather this dataset, I needed to get invited to a bunch of Discord servers. Discord invitations are done through invitation links, which are shared by server members to bring in new members. So, a possible way to start would be by scraping the web to find lots of publicly shared invitation links.
 
 ## The Common Crawl
 
-The Common Crawl is a large and open repository of web crawl data, and can be used to find Discord invite links. It contains petabytes of HTML from webpages all over the internet, and new crawl data typically gets released every few months. 
+The Common Crawl is a large and open repository of web crawl data. It contains petabytes of HTML from webpages all over the internet, and new crawl data typically gets released every few months. I decided to see if any public Discord invite links have been discovered by their crawler.
 
 There is a
 [list of all available crawls](http://index.commoncrawl.org/collinfo.json). The page looks like below:
