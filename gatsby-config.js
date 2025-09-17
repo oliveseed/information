@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `information`,
     author: {
-      name: `oliverin1`,
+      name: `oliveseed`,
       summary: `who lives and builds things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
