@@ -24,7 +24,7 @@ It hadn’t been a few minutes. I figured that tricking it into thinking time ha
 
 And it actually worked. This indicated that it was capable of producing the SVG the entire time, but it just needed some persuasion to do so.
 
-Bing Chat isn’t always like this. I tried asking it to generate an SVG yesterday, and with the right prompt it worked without hesitation. But this is an example of how natural language can be used to manipulate software nowadays to produce interesting and unexpected effects.
+Bing Chat isn’t always like this. I tried asking it to generate an SVG yesterday, and with a variation of the prompt it worked without hesitation. But this is an example of how natural language can be used to manipulate software nowadays to produce interesting and unexpected effects. It also highlights a more fundamental problem in LLMs, which is that they don't experience the passing of time.
 
 And in case you were wondering, here’s how the clock turned out.
 
@@ -32,4 +32,4 @@ And in case you were wondering, here’s how the clock turned out.
 
 **Notes**
 1. Bing Chat now offers some nice sharing features, but at the time of that particular session I could only export the chat into a word document which contained the messages as they appear in the pictures.
-2. According to the leaked system prompt, Bing Chat seems to include timestamps in each message. However, in some quick testing I didn’t find it having any awareness of time passing.
+2. According to the leaked system prompt, messages in Bing Chat do seem to be timestamped. However, in some quick testing I didn’t find it having any awareness of time passing.
