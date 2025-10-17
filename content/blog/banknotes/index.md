@@ -8,7 +8,7 @@ A few weeks ago, Google gave us a new toy called Nano Banana (Gemini 2.5 Flash),
 
 There are still plenty of tricky prompts that frontier models struggle with. But I think there is a specific kind of thing that will continue to be especially difficult for models to generate images of: **banknotes**. 
 
-For example, here’s what some of today’s best image models think Canadian banknotes look like:
+For example, here’s what some of today’s best image models think [Canadian banknotes](https://en.wikipedia.org/wiki/Banknotes_of_the_Canadian_dollar) look like:
 
 <img width="5632" height="1536" alt="banknotes" src="https://github.com/user-attachments/assets/32ca0453-9b5c-4e57-a367-5f0d614ba613" />
 
