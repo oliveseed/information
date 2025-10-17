@@ -1,7 +1,7 @@
 ---
-title: Mapping 1,000,000 Discord servers
+title: The Discord Iceberg
 date: "2024-07-01"
-description: "Findings from getting invited to over a million Discord servers"
+description: "Discovering and analyzing over 1,000,000 Discord servers"
 ---
 
 Discord is a social platform that lets people create and join “Discord servers”, which are isolated invite-only communities containing collections of chatrooms. Naturally, this makes it non trivial to analyze global, platform-wide statistics, as you only see and access the small subset of communities you've been invited to (usually 5-50 Discord servers, while there are millions in total).
