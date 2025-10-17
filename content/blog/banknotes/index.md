@@ -1,7 +1,7 @@
 ---
 title: Banknotes
 date: "2025-09-16"
-description: "AI-generating images of banknotes"
+description: "What AI probably won't be able to generate"
 ---
 
 A few weeks ago, Google gave us a new toy called Nano Banana (Gemini 2.5 Flash), which had significantly upgraded image generation capabilities compared to the previous 2.0 model. With the standards continuing to rise, text-to-image gets better and better. Things that models used to struggle with, like faces, [hands](https://www.reddit.com/r/StableDiffusion/comments/12c44g7/why_ai_art_struggles_with_hands/), and [historically accurate WWII German soldiers](https://www.nytimes.com/2024/02/22/technology/google-gemini-german-uniforms.html) are pretty much solved by now.
