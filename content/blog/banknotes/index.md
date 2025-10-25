@@ -10,7 +10,7 @@ There are still plenty of tricky prompts that frontier models struggle with. But
 
 For example, here’s what some of today’s best image models think [Canadian banknotes](https://en.wikipedia.org/wiki/Banknotes_of_the_Canadian_dollar) look like:
 
-<img width="5632" height="1536" alt="banknotes" src="https://github.com/user-attachments/assets/32ca0453-9b5c-4e57-a367-5f0d614ba613" />
+<img width="1408" height="384" alt="banknotes" src="https://github.com/user-attachments/assets/32ca0453-9b5c-4e57-a367-5f0d614ba613" />
 
 > Prompt: _“a top-down photo of a canadian currency collection containing one of each banknote denomination arranged on a solid white background. the banknotes are laid flat, neatly spaced, and each fully visible”_. **Left to right:** imagen-4.0, gpt-image-1, nano-banana, seedream-4
 
