@@ -49,7 +49,7 @@ There is a
 
 Each crawl has a name like “CC-MAIN-2024-26” where 2024 is the year and 26 is the week number.
 
-The Common Crawl crawls billions of URLs, but it is possible to choose a crawl and download pages from it that match some URL pattern. This means that by limiting to the pattern of Discord invitation links, it would be possible to find almost* every Discord server whose link was shared on the web and captured by the crawler.
+The Common Crawl crawls billions of URLs, but it is possible to choose a crawl and download pages from it that match some URL pattern. This means that by limiting to the pattern of Discord invitation links, it would be possible to find Discord servers whose links were shared on the web and captured by the crawler.
 
 There are three types of discord invitation links:
 - discord.com/invite/*
@@ -82,7 +82,7 @@ The result might be quite long, but here’s a small sample of what it would loo
 
 In each entry, the “filename” indicates which common crawl segment the data for the url can be found in. Additionally, “length” and “offset” indicate the exact byte position in the segment that contains the wanted data. “Digest” is a string that uniquely identifies the data of the crawled url.
 
-By making cURL requests to iterate over each page, the JSON data can be saved to the machine directly. This data can then be loaded and combined into a Python list.
+By making cURL requests to iterate over each page, the JSON data can be downloaded directly. This data can then be loaded and combined into a Python list.
 
 The five pages mentioned above would contain approximately 60,000 to 70,000 URLs in total, potentially leading to the discovery of up to 70,000 Discord servers from the 2024-18 crawl.
 
@@ -90,13 +90,13 @@ The list of invites collected this way may include duplicates. One type is a dig
 
 ## Downloading from the Common Crawl data
 
-In the previous section, only the invite URLs are obtained, without any information about the servers they’re inviting to. This information is available on the server landing page, which typically displays the server name and number of members. Additional details, such as the server icon and server ID, can also be extracted from this page. To gather this information, the HTML data of the crawled URL needs to be downloaded from data.commoncrawl.org.
+In the previous section, only the invitation URLs are obtained, without any information about the servers they point to. This information is available on the server landing page, which typically displays the server name and number of members. Additional details, such as the server icon and server ID, can also be extracted from this page. To gather this information, the HTML data of the crawled URL needs to be downloaded from data.commoncrawl.org.
 
-Common Crawl data is stored in large segment files many GBs in size, with the wanted Discord data mixed within. However, bandwidth can be conserved by retrieving only the necessary parts. This can be achieved using the following cURL command:
+Common Crawl data is stored in large segment files many GBs in size, with the Discord data mixed among other random things. However, bandwidth can be conserved by retrieving only the necessary parts. This can be achieved using the following cURL command:
 
     curl -H “range: bytes={offset}-{offset+length-1}” -o {digest} {filename}
 
-In this command, the filename, offset, and length are used to make a cURL request with a byte range, which is supported by the Common Crawl servers. This process can be multithreaded for each entry in the invitation list collected earlier until the HTML data for each entry has been downloaded to the machine. The data is in gz compressed format. A way to verify that all files were downloaded successfully is to use the digest as the name of the file. This allows for checking the existence of all files after downloading. Additionally, the byte lengths of each piece of data can be used to ensure that each saved file is the correct size.
+In this command, the filename, offset, and length are used to make a cURL request with a byte range, which is supported by the Common Crawl servers. This process can be multithreaded for each entry in the invitation list collected earlier until the HTML data for each entry has been downloaded. The data is in gz compressed format. A way to verify that all files were downloaded successfully is to use the digest as the name of the file. This allows for checking the existence of all files after downloading. Additionally, the byte lengths of each piece of data can be used to ensure that each saved file is the correct size.
 
 Since there can be tens of thousands of invite links, the above method requires making an equivalent number of requests to the Common Crawl servers. An alternative approach is to establish a persistent HTTP connection to data.commoncrawl.org, which keeps the TCP connection open while downloading all the data, and is more efficient.
 
@@ -110,11 +110,15 @@ With the wanted information extracted and stored in Python lists, it can then be
 
 ![pandas table](./table.png)
 
-This process was repeated for every crawl newer than 2020, resulting in around 900,000 invites.
+This process was repeated for every crawl newer than 2020, resulting in around 900,000 invitation links being collected.
 
 ## Exploring the data
 
-After setting up a SQLite database and a quick Gradio interface, I could run queries on the table. Interesting results emerged when searching for specific video games, university names, events, and cities. The interface was also effective for finding both popular and obscure servers. Many servers had only one member, the minimum number needed since each server requires an owner. However, identifying whether a server was active or not without joining it remained a challenge, as some servers were old and inactive.
+After setting up a SQLite database and a quick Gradio interface, I could run queries on the table.
+
+![discord servers of different subreddits](./subreddits.JPG)
+
+Interesting results emerged when searching for specific video games, university names, events, and cities. The interface was also effective for finding both popular and obscure servers. Many servers had only one member, the minimum number needed since each server requires an owner. However, many servers were old and inactive, and the only way to find out if a server was "alive" or not was to join it.
 
 With search queries limited to textual lists of results, I also wanted to visualize the data.
 
@@ -130,7 +134,7 @@ Duplicates, occurring at different timestamps, allowed tracking member counts ov
 
 After processing, the result was a spreadsheet of member counts over time for all Discord servers that at some point reached the top 10 from 2019 to 2024. This data was animated into a bar chart race using Flourish.studio. The final video is below:
 
-https://www.youtube.com/watch?v=BNbN8532GPM
+[![Watch the video](https://img.youtube.com/vi/BNbN8532GPM/0.jpg)](https://www.youtube.com/watch?v=BNbN8532GPM)
 
 Key observations from the video:
 - Discord used to cap the number of members a server could have, and raised the cap multiple times as top servers grew.
@@ -140,7 +144,7 @@ Key observations from the video:
 ## Other sources related to Discord
 
 [Explore communities](https://discord.com/servers) -- 
-Discord’s own server listing page, which lets people find community servers. It also ranks the top 10 largest Discord servers, but this is not a complete top 10 list as servers must be set as community servers to be discoverable.
+Discord’s own server listing page, which lets people find community servers. It also ranks the top 10 largest Discord servers, but this is not a complete top 10 list as it only includes servers set as community servers.
 
 [Disboard](https://disboard.org) -- 
 A Discord server listing website listing around 1.4 million servers. Servers are listed on Disboard manually by the server’s admins.
