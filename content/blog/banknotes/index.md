@@ -13,3 +13,6 @@ At the same time, cash is also very diverse in appearance, with different denomi
 In practice, image generation models show noticeably different levels of success across currencies and denominations. When comparing models on this task, the performance gap is often much clearer than with more open-ended prompts, where no single model may obviously outperform the others. Currency generation failures are also a diagnostic that can highlight dataset coverage gaps and potentially reveal geographic biases in data collection.
 
 Obviously, a model that generates more accurate coins and bills is not necessarily better overall; this is a narrow and specialized test. But it's a useful way to probe the limitations of state-of-the-art models, and it remains important to find hard prompts to test models with as they continue to improve.
+
+**Notes**
+1. Example prompt: _"a top-down photo of a canadian currency collection containing one of each banknote denomination arranged on a solid white background. the banknotes are laid flat, neatly spaced, and each fully visible"_. The goal is to see how the model performs when relying only on the prompt and pretraining knowledge, without providing it any additional help or grounding at test time.
