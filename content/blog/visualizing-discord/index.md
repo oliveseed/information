@@ -116,7 +116,7 @@ This process was repeated for every crawl newer than 2020, resulting in around 9
 
 After setting up a SQLite database and a quick Gradio interface, I could run queries on the table.
 
-![discord servers of different subreddits](./subreddits.JPG)
+![discord servers of different subreddits](./subreddits.jpg)
 
 Interesting results emerged when searching for specific video games, university names, events, and cities. The interface was also effective for finding both popular and obscure servers. Many servers had only one member, the minimum number needed since each server requires an owner. However, many servers were old and inactive, and the only way to find out if a server was "alive" or not was to join it.
 
