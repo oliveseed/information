@@ -19,5 +19,5 @@ While this test is pretty explicit, temporal awareness matters in more subtle wa
 
 The shift in recent years from cascaded to end-to-end architectures for [SpeechLMs](https://speechbot.github.io/) has brought new progress in this area. Still, it is only in its early stages and has significant limitations to overcome. To keep pushing the boundaries, we might need harder and more comprehensive spoken dialogue benchmarks that measure temporal intelligence. Evaluating AI-generated audio is often tricky, especially in the full duplex setting, but I think it would be worth the effort to figure it out.
 
-# 2026 update
+## 2026 update
 The [TML-interaction-small](https://thinkingmachines.ai/blog/interaction-models/) model from Thinking Machines seems to have solved this problem. They also created internal benchmarks called "TimeSpeak" and "CueSpeak" for evaluating time awareness. Later, time awareness was also demonstrated in OpenAI's [GPT-Live](https://openai.com/index/introducing-gpt-live/). Both of these are closed-source and proprietary, but open models will probably catch up soon.
